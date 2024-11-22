@@ -510,7 +510,7 @@ a {
 /*============================= blog============================= */
 .blog {
   padding: 85px 0;
-  background: #FFF;
+  background: #fff;
 }
 
 .blog__inner {
@@ -608,5 +608,38 @@ a {
 }
 
 .blog-item__more:hover {
-  color: #2E80CE;
+  color: #2e80ce;
+}
+
+/*====================== appointment================ */
+.appointment {
+  padding: 85px 0;
+}
+
+.appointment__inner {
+  text-align: center;
+  padding: 100px 178px;
+  background: #F6FBFF;
+}
+
+.appointment__heading {
+  max-width: 813px;
+}
+
+.appointment__heading::after {
+  content: "";
+  width: 136px;
+  height: 2px;
+  background: #2e80ce;
+  display: block;
+  margin: 18px auto 0;
+}
+
+.appointment__desc{
+  max-width: 617px;
+  margin: 18px auto 0;
+}
+
+.appointment__btn{
+  margin-top: 38px;
 }
