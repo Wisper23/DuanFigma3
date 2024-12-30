@@ -1,5 +1,8 @@
 /* PC */
 @media (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
 }
 
 /* tablet & mobile */
@@ -27,7 +30,7 @@
     width: 24px;
   }
   /* 4. overplay */
-  .menu-overplay{
+  .menu-overplay {
     position: fixed;
     background: rgba(0, 0, 0, 0.3);
     inset: 0;
@@ -38,9 +41,88 @@
     transition: 0.5s;
   }
   /* 5. kiem tra neu checked dc check thi hien overplay */
-  .menu-checkbox:checked ~ .menu-overplay{
+  .menu-checkbox:checked ~ .menu-overplay {
     opacity: 1;
     visibility: visible;
+  }
+  /*6. code cho menu drawer */
+  .menu-drawer {
+    position: fixed;
+    background: #d37a7a;
+    inset: 0 40% 0 0;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    padding: 60px;
+  }
+  /*7. neu dc check thi hien menu */
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+  /* 8. menu top */
+  .close__menu {
+    width: 24px;
+    color: #fff;
+  }
+  .menu-drawer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar__list {
+    margin-top: 25px;
+    flex-direction: column;
+  }
+
+  #navbar__list--mobile {
+    margin-top: 25px;
+  }
+
+  .navbar__link {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .navbar__link:hover {
+    background: #a10f0f9d;
+  }
+
+  /* 9. khoi hero */
+  .hero {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .hero__content {
+    order: 2;
+    width: 80%;
+    text-align: center;
+    margin: 22px auto;
+  }
+  .hero__media {
+    order: 1;
+  }
+  .hero__row {
+    justify-content: center;
+  }
+  /* khoi service */
+  .service__row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .service__img {
+    width: 100%;
+  }
+
+  .service__list{
+    text-align: center;
+  }
+
+  .service-item {
+    width: 90%;
+    text-align: start;
   }
 }
 
@@ -53,8 +135,7 @@
 }
 
 /* tam an phan ko lien quan */
-.hero,
-.footer,
-main {
+
+.footer {
   display: none;
 }
